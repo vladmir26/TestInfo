@@ -28,7 +28,7 @@
   position: absolute;
   top: 48px;
   left: 17px;
-  background-image: url("../images/icons/Vector 14.svg");
+  background-image: url("./images/icons/Vector 14.svg");
   background-repeat: no-repeat;
   width: 230px;
   height: 2px;
@@ -58,7 +58,7 @@
   position: absolute;
   right: 20px;
   bottom: 16px;
-  background-image: url("../images/icons/caret-down 1.svg");
+  background-image: url("./images/icons/caret-down 1.svg");
   background-repeat: no-repeat;
   display: block;
   width: 13px;
