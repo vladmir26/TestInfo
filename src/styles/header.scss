@@ -1,0 +1,153 @@
+@import "variables.scss";
+
+.header {
+   color: $color-first;
+
+   &__top-color {
+      background-color: $color-thirteenth;
+   }
+
+   &__top-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 73px;
+   }
+
+   &__bottom-color {
+      background-color: $color-twelfth;
+   }
+
+   &__bottom-wrapper {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__logo {
+      padding-top: 21px;
+      padding-bottom: 16px;
+      font-size: 28px;
+      font-weight: 700;
+      text-transform: uppercase;
+   }
+
+   &__phone {
+      padding-top: 26px;
+      padding-bottom: 22px;
+      font-size: 19px;
+   }
+
+   &__wrapper-search {
+      padding-top: 31px;
+      padding-bottom: 23px;
+   }
+
+   &__search-input {
+      outline: none;
+      color: $color-first;
+      padding-left: 7px;
+      background-color: $color-thirteenth;
+   }
+
+   &__search-input::placeholder {
+      color: $color-first;
+   }
+
+   input[type="search"]::-webkit-search-cancel-button,
+   input[type="search"]::-webkit-search-clear-button {
+     -webkit-appearance: none;
+     appearance: none;
+     display: none;
+}
+
+   &__search-line {
+      padding-top: 5px;
+      background-image: url('../images/icons/Vector 1.svg');
+      background-repeat: no-repeat;
+      display: block;
+      width: 281px;
+      height: 2px;
+   }
+
+   &__text-link {
+      padding-top: 28px;
+      padding-bottom: 24px;
+   }
+
+   &__link {
+      text-decoration-line: underline;
+      text-decoration-skip-ink: none;
+   }
+
+   &__link:hover {
+      color: $color-seventeenth;
+   }
+
+   &__menu-list {
+      display: flex;
+   }
+
+   &__menu-item {
+      padding-top: 13px;
+      padding-bottom: 12px;
+      padding-left: 39px;
+      text-transform: uppercase;
+      font-weight: 700;
+   }
+
+   &__menu-item:first-child {
+      padding-left: 0;
+   }  
+
+   &__menu-link:hover {
+      color: $color-seventeenth;
+   }
+
+   &__cart-link {
+      display: flex;
+      padding-top: 15px;
+      padding-bottom: 15px;
+   }
+
+   &__cart-link:hover .header__cart-text {
+      color: $color-seventeenth;
+   }
+
+   &__cart-link:hover .header__cart-icon-path {
+      fill: $color-seventeenth;
+   }
+
+
+   &__cart-text {
+      padding-left: 9px;
+      text-transform: uppercase;
+   }
+
+   
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+   .header {
+      &__top-wrapper {
+         justify-content: space-between;
+      }
+
+
+      &__phone {
+         display: none;
+      }
+
+      &__text-link {
+         display: none;
+      }
+
+      &__wrapper-search {
+         flex: 1;
+         width: 697px;
+      }
+
+      &__search-line {
+         width: 697px;
+      }
+   }
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2? Family= PT+Sans &amp; Family= Racing+Sans+One &amp; display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top-color">
+        <div class="header__top-wrapper container">
+          <p class="header__logo">логотип</p>
+          <p class="header__phone">8 800 777 50 50</p>
+          <div class="header__wrapper-search">
+            <svg xmlns="httpwww.w3.org2000svg" width="13" height="13" viewbox="0 0 13 13" fill="none">
+              <path d="M8.68135 1.48741C6.69814 -0.495804 3.4703 -0.495804 1.48709 1.48741C-0.495696 3.47106 -0.495696 6.69846 1.48709 8.6821C3.2532 10.4478 6.00382 10.6369 7.98574 9.25819C8.02744 9.45553 8.12289 9.64383 8.27637 9.79731L11.1646 12.6855C11.5855 13.1055 12.2656 13.1055 12.6843 12.6855C13.1048 12.265 13.1048 11.5849 12.6843 11.1657L9.79613 8.27669C9.64351 8.1245 9.45477 8.02863 9.25744 7.98692C10.6371 6.00457 10.4479 3.25438 8.68135 1.48741ZM7.76949 7.77024C6.28885 9.25089 3.87916 9.25089 2.39895 7.77024C0.919166 6.2896 0.919166 3.88034 2.39895 2.3997C3.87916 0.919489 6.28885 0.919489 7.76949 2.3997C9.25013 3.88034 9.25013 6.2896 7.76949 7.77024Z" fill="white"></path>
+            </svg>
+            <input class="header__search-input" type="search" placeholder="Поиск товаров"><span class="header__search-line"></span>
+          </div>
+          <p class="header__text-link"><a class="header__link" href="#">Доставка и оплата</a></p>
+        </div>
+      </div>
+      <div class="header__bottom-color">
+        <div class="header__bottom-wrapper container">
+          <nav class="header__nav">
+            <ul class="header__menu-list">
+              <li class="header__menu-item"><a class="header__menu-link" href="#">мобильные телефоны </a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="#">планшеты</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="#">фототехника</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="#">ноутбуки</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="#">телевизоры</a></li>
+            </ul>
+          </nav>
+          <div class="header__wrapper-cart"><a class="header__cart-link" href="#">
+              <svg class="header__cart-icon" xmlns="httpwww.w3.org2000svg" width="17" height="16" viewbox="0 0 17 16" fill="none">
+                <path class="header__cart-icon-path" d="M16.3015 2.91311H3.0096L2.81202 0.652847C2.77971 0.28322 2.47804 0 2.11666 0H0.69816C0.312576 0 0 0.320979 0 0.716927C0 1.11288 0.312576 1.43385 0.69816 1.43385H1.47837C1.90475 6.31176 0.802785 -6.29581 2.28136 10.6204C2.33834 11.2825 2.68672 12.0009 3.28687 12.4891C2.20482 13.9081 3.19349 16 4.95361 16C6.4145 16 7.44488 14.5038 6.9439 13.0868H10.765C10.2647 14.502 11.2928 16 12.7553 16C13.9224 16 14.872 15.0249 14.872 13.8264C14.872 12.628 13.9224 11.6529 12.7553 11.6529H4.95834C4.428 11.6529 3.96585 11.3243 3.76638 10.8456L14.9239 10.1723C15.2285 10.1539 15.4862 9.93446 15.5603 9.63048L16.9789 3.80391C17.0888 3.35211 16.7558 2.91311 16.3015 2.91311ZM4.95361 14.5661C4.55646 14.5661 4.23331 14.2343 4.23331 13.8264C4.23331 13.4186 4.55646 13.0868 4.95361 13.0868C5.3508 13.0868 5.67395 13.4186 5.67395 13.8264C5.67395 14.2343 5.3508 14.5661 4.95361 14.5661ZM12.7553 14.5661C12.3581 14.5661 12.035 14.2343 12.035 13.8264C12.035 13.4186 12.3581 13.0868 12.7553 13.0868C13.1525 13.0868 13.4756 13.4186 13.4756 13.8264C13.4756 14.2343 13.1525 14.5661 12.7553 14.5661ZM14.33 8.77181L3.57844 9.42062L3.13494 4.34693H15.4073L14.33 8.77181Z" fill="white"></path>
+              </svg>
+              <p class="header__cart-text">Корзина</p></a></div>
+        </div>
+      </div>
+    </header>
+  </body>
+  <main> 
+    <section class="filters">
+      <form class="filters__form">
+        <div class="filters__wrapper-select">
+          <div class="filters__select">Любого логотипа</div><span class="filters__select-arrow"></span><span class="filters__line"></span>
+          <ul class="filters__dropdown">
+            <li class="filters__dropdown-item">Компакт-камера</li>
+            <li class="filters__dropdown-item">Беззеркальная</li>
+            <li class="filters__dropdown-item">Зеркальная  </li>
+            <li class="filters__dropdown-item"> Среднеформатная</li>
+          </ul>
+        </div>
+        <div class="filters__wrapper-select">
+          <div class="filters__select">Любого бренда</div><span class="filters__select-arrow"></span><span class="filters__line"></span>
+          <ul class="filters__dropdown">
+            <li class="filters__dropdown-item">Canon</li>
+            <li class="filters__dropdown-item">Nikon</li>
+            <li class="filters__dropdown-item">Sony</li>
+            <li class="filters__dropdown-item">Fujifilm</li>
+            <li class="filters__dropdown-item">Samsung</li>
+            <li class="filters__dropdown-item">Olympus</li>
+          </ul>
+        </div>
+        <label class="filters__label-first" for="">По цене</label>
+        <input class="filters__input" type="text" placeholder="ОТ 500 000">
+        <input class="filters__input" type="text" placeholder="ОТ 25 000 000">
+        <label class="filters__label-second" for="">рублей</label>
+      </form>
+    </section>
+    <section class="products container">
+      <ul class="products__list">
+        <li class="products__item-first">
+          <div class="products__wrapper-image"><img class="products__image-first" src="../images/content-image/image 1.png" alt="0"></div>
+          <div class="products__wrapper-description">
+            <h1 class="products__heading-first">Canon EOS 5D Mark III Body</h1>
+            <p class="products__text-first">Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей профессиональных фотографов и видеооператоров. Преемник успешной модели EOS 5D Mark II. Фотоаппарат имеет 22.3 Мп. CMOS-сенсор размером 36х24 мм, 14-битный процессор DIGIC 5+, 61-точечный автофокус.</p>
+            <p class="products__old-price">4 400,00 руб.</p>
+            <svg class="products__line-first" xmlns="httpwww.w3.org2000svg" width="252" height="2" viewbox="0 0 252 2" fill="none">
+              <path d="M0 1L252 1.00002" stroke="#FFBCBC"></path>
+            </svg>
+            <div class="products__wrapper-price-first">
+              <p class="products__new-price">3 200,00 руб.</p>
+              <svg class="products__cart-first" xmlns="httpwww.w3.org2000svg" width="17" height="16" viewbox="0 0 17 16" fill="none">
+                <path d="M16.3015 2.91311H3.0096L2.81202 0.652847C2.77971 0.28322 2.47804 0 2.11666 0H0.69816C0.312576 0 0 0.320979 0 0.716927C0 1.11288 0.312576 1.43385 0.69816 1.43385H1.47837C1.90475 6.31176 0.802785 -6.29581 2.28136 10.6204C2.33834 11.2825 2.68672 12.0009 3.28687 12.4891C2.20482 13.9081 3.19349 16 4.95361 16C6.4145 16 7.44488 14.5038 6.9439 13.0868H10.765C10.2647 14.502 11.2928 16 12.7553 16C13.9224 16 14.872 15.0249 14.872 13.8264C14.872 12.628 13.9224 11.6529 12.7553 11.6529H4.95834C4.428 11.6529 3.96585 11.3243 3.76638 10.8456L14.9239 10.1723C15.2285 10.1539 15.4862 9.93446 15.5603 9.63048L16.9789 3.80391C17.0888 3.35211 16.7558 2.91311 16.3015 2.91311ZM4.95361 14.5661C4.55646 14.5661 4.23331 14.2343 4.23331 13.8264C4.23331 13.4186 4.55646 13.0868 4.95361 13.0868C5.3508 13.0868 5.67395 13.4186 5.67395 13.8264C5.67395 14.2343 5.3508 14.5661 4.95361 14.5661ZM12.7553 14.5661C12.3581 14.5661 12.035 14.2343 12.035 13.8264C12.035 13.4186 12.3581 13.0868 12.7553 13.0868C13.1525 13.0868 13.4756 13.4186 13.4756 13.8264C13.4756 14.2343 13.1525 14.5661 12.7553 14.5661ZM14.33 8.77181L3.57844 9.42062L3.13494 4.34693H15.4073L14.33 8.77181Z" fill="#FF3D3D"></path>
+              </svg>
+            </div>
+          </div>
+          <li class="products__item"><img class="products__image" src="../images/content-image/image 1.png" alt="1">
+            <h2 class="products__heading">Canon EOS 5D Mark III Body</h2>
+            <p class="products__text">Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</p><img class="products__line" src="../images/icons/Vector 4.svg" alt="2">
+            <div class="products__wrapper-price">
+              <p class="products__price">3 200,00 руб.</p><img class="products__cart" src="../images/icons/Vector.svg" alt="3">
+            </div>
+          </li>
+          <li class="products__item"><img class="products__image" src="../images/content-image/image 1.png" alt="1">
+            <h2 class="products__heading">Canon EOS 5D Mark III Body</h2>
+            <p class="products__text">Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</p><img class="products__line" src="../images/icons/Vector 4.svg" alt="2">
+            <div class="products__wrapper-price">
+              <p class="products__price">3 200,00 руб.</p><img class="products__cart" src="../images/icons/Vector.svg" alt="3">
+            </div>
+          </li>
+          <li class="products__item"><img class="products__image" src="../images/content-image/image 1.png" alt="1">
+            <h2 class="products__heading">Canon EOS 5D Mark III Body</h2>
+            <p class="products__text">Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</p><img class="products__line" src="../images/icons/Vector 4.svg" alt="2">
+            <div class="products__wrapper-price">
+              <p class="products__price">3 200,00 руб.</p><img class="products__cart" src="../images/icons/Vector.svg" alt="3">
+            </div>
+          </li>
+          <li class="products__item"><img class="products__image" src="../images/content-image/image 1.png" alt="1">
+            <h2 class="products__heading">Canon EOS 5D Mark III Body</h2>
+            <p class="products__text">Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</p><img class="products__line" src="../images/icons/Vector 4.svg" alt="2">
+            <div class="products__wrapper-price">
+              <p class="products__price">3 200,00 руб.</p><img class="products__cart" src="../images/icons/Vector.svg" alt="3">
+            </div>
+          </li>
+          <li class="products__item"><img class="products__image" src="../images/content-image/image 1.png" alt="1">
+            <h2 class="products__heading">Canon EOS 5D Mark III Body</h2>
+            <p class="products__text">Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</p><img class="products__line" src="../images/icons/Vector 4.svg" alt="2">
+            <div class="products__wrapper-price">
+              <p class="products__price">3 200,00 руб.</p><img class="products__cart" src="../images/icons/Vector.svg" alt="3">
+            </div>
+          </li>
+          <li class="products__item"><img class="products__image" src="../images/content-image/image 1.png" alt="1">
+            <h2 class="products__heading">Canon EOS 5D Mark III Body</h2>
+            <p class="products__text">Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</p><img class="products__line" src="../images/icons/Vector 4.svg" alt="2">
+            <div class="products__wrapper-price">
+              <p class="products__price">3 200,00 руб.</p><img class="products__cart" src="../images/icons/Vector.svg" alt="3">
+            </div>
+          </li>
+          <li class="products__item"><img class="products__image" src="../images/content-image/image 1.png" alt="1">
+            <h2 class="products__heading">Canon EOS 5D Mark III Body</h2>
+            <p class="products__text">Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</p><img class="products__line" src="../images/icons/Vector 4.svg" alt="2">
+            <div class="products__wrapper-price">
+              <p class="products__price">3 200,00 руб.</p><img class="products__cart" src="../images/icons/Vector.svg" alt="3">
+            </div>
+          </li>
+          <li class="products__item"><img class="products__image" src="../images/content-image/image 1.png" alt="1">
+            <h2 class="products__heading">Canon EOS 5D Mark III Body</h2>
+            <p class="products__text">Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</p><img class="products__line" src="../images/icons/Vector 4.svg" alt="2">
+            <div class="products__wrapper-price">
+              <p class="products__price">3 200,00 руб.</p><img class="products__cart" src="../images/icons/Vector.svg" alt="3">
+            </div>
+          </li>
+          <li class="products__item"><img class="products__image" src="../images/content-image/image 1.png" alt="1">
+            <h2 class="products__heading">Canon EOS 5D Mark III Body</h2>
+            <p class="products__text">Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</p><img class="products__line" src="../images/icons/Vector 4.svg" alt="2">
+            <div class="products__wrapper-price">
+              <p class="products__price">3 200,00 руб.</p><img class="products__cart" src="../images/icons/Vector.svg" alt="3">
+            </div>
+          </li>
+          <li class="products__item"><img class="products__image" src="../images/content-image/image 1.png" alt="1">
+            <h2 class="products__heading">Canon EOS 5D Mark III Body</h2>
+            <p class="products__text">Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</p><img class="products__line" src="../images/icons/Vector 4.svg" alt="2">
+            <div class="products__wrapper-price">
+              <p class="products__price">3 200,00 руб.</p><img class="products__cart" src="../images/icons/Vector.svg" alt="3">
+            </div>
+          </li>
+        </li>
+      </ul>
+    </section>
+  </main>
+</html>
