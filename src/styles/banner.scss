@@ -1,0 +1,144 @@
+.banner {
+    // background-image: url(), url(), url();
+    // background-position: center left, center right, 200px 300px;
+    // background-size: 20px 20px, 300px 30px, 100px 100px;
+    // background-repeat: no-repeat;
+    display: flex;
+
+    &__item-image {
+      display: flex;
+      position: absolute;
+    }
+
+    &__item-image::before {
+      content: '';
+      position: relative;
+      display: block;
+      width: 500px;
+      height: 579px;
+      background-image: url('../images/content-image/Group.png');
+      background-repeat: no-repeat;
+      background-position: 50px;
+      order: 2;
+    }
+
+    &__image {
+      max-width: 523px;
+      order: 1;
+    }
+
+    &__main-wrapper {
+      display: flex;
+    }
+
+    &__header {
+      max-width: 532px;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 120%;
+    
+      
+      &-color {
+        color: var(--color-third);
+      }
+    }
+
+    &__main-item {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      margin-top: 64px;
+    }
+
+    &__inner-wrapper {
+      position: relative;
+      padding-left: 65px;
+      width: max-content;
+    }
+
+
+    &__inner-wrapper::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 7px;
+      left: 40px;
+      height: 130px;
+      border-left: 3px solid var(--color-fourth);
+    }
+
+    &__main-title {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    &__title {
+      margin-bottom: 16px;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--color-second)
+    }
+
+    &__text {
+      margin-bottom: 16px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    &__number {
+      display: inline-block;
+      position: relative;
+      font-size: 30px;
+      padding: 20px;
+      margin-top: 15px;
+
+      &:hover .banner__circle {
+        animation: pulsate 7s linear infinite;
+      }
+
+      &-text {
+        position: relative;
+        z-index: 1;
+      }
+    }
+
+    &__circle {
+      position: absolute;
+      inset: 0; 
+      display: grid;
+      margin-left: -30px;
+
+      &-item {
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+        margin: auto;
+      }
+
+    }
+
+    &__button {
+      width: max-content;
+      border-radius: 4px;
+      box-shadow: inset 0px -2px 2px 0px rgba(0, 0, 0, 0.25), 0px 0px 30px 0px rgba(255, 222, 0, 0.35);
+      background-color: var(--color-third);
+      font-size: 16px;
+      font-weight: 600;
+      padding: 21px 25px;
+      margin-top: 48px;
+    }
+}
+
+@keyframes pulsate {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(0.7);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

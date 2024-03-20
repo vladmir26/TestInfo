@@ -1,31 +1,31 @@
-@import "variables.scss";
-
 .header {
     margin-top: 27px;
-    
-    &__main-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+
+    &__logo {
         display: flex;
-        justify-content: center;
+
+        &-icon {
+            flex-shrink: 0;
+            width: 56px;
+            height: 57px;
+        }
+
+        &-text {
+            padding-top: 10px;
+            padding-left: 8px;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--color-first);
+        }
     }
-
-    &__wrapper-logo {
-        display: flex;
-    }
-
-   &__wrapper-icon {
-       flex-shrink: 0;
-   }
-
-   &__wrapper-text {
-       padding-top: 10px;
-       padding-left: 8px;
-       font-size: 24px;
-       font-weight: 700;
-       color: $color-first;
-   }
 
    &__menu-list {
        display: flex;
+       flex-grow: 1;
+       justify-content: space-between;
    }
 
    &__menu-item {
@@ -34,30 +34,31 @@
    }
 
    &__menu-text {
-      color: $color-first;
+      color: var(--color-first);
       font-size: 14px;
       font-weight: 700;
    }
 
    &__menu-date {
-      color: $color-second;
+      color: var(--color-second);
       font-size: 14px;
       font-weight: 400;
    }
 
    &__menu-number {
-      color: $color-third;
+      color: var(--color-third);
       font-size: 16px;
       font-weight: 700;
    }
 
    &__button {
-      width: 161px;
-      height: 50px;
-      border: 1px solid $color-third;
-      border-radius: 4px;
-      background-color: $color-first;
-      font-size: 14px;
-      font-weight: 600;
+        flex-shrink: 0;
+        width: max-content;
+        border: 1px solid var(--color-third);
+        border-radius: 4px;
+        background-color: var(--color-first);
+        font-size: 14px;
+        font-weight: 600;
+        padding: 15px 25px;
    }
 }
