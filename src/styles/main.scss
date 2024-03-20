@@ -43,12 +43,13 @@ input, textarea, button {
     margin-right: auto;
 }
 
-/*.separator  {
-    background-color: red;
-    height: 100px;
+.separator  {
+    background: linear-gradient(90.00deg, rgb(255, 157, 102),rgb(255, 114, 86) 100%);
+    min-width: 1921px;
+    height: 205px;
     margin-top: -100px;
-    // clip-path:polygon()
-}*/
+    clip-path: polygon(0% 100%, 100% 0%, 100% 100%)
+}
 
 
 

@@ -37,6 +37,7 @@
       color: var(--color-first);
       font-size: 14px;
       font-weight: 700;
+      
    }
 
    &__menu-date {
@@ -49,6 +50,7 @@
       color: var(--color-third);
       font-size: 16px;
       font-weight: 700;
+      padding-right: 4px;
    }
 
    &__button {
@@ -60,5 +62,10 @@
         font-size: 14px;
         font-weight: 600;
         padding: 15px 25px;
+        cursor: url('../images/icons/hover.svg'), auto;
+
+        &:hover {
+            background-color: yellow;
+        }
    }
 }
